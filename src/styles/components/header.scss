@@ -39,7 +39,11 @@
       top: 15%;
       transform: translateY(115px);
       transition: transform 0.5s;
-      clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+
+      @media (max-width: 40em) {
+        color: #fff;
+        font-size: 0.6rem;
+      }
 
       .pink-span {
         font-family: "Mazius", sans-serif;
