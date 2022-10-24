@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Mazius";
+  src: url("../fonts/mazius-extra-italic.woff");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue-Bold.otf");
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+  height: calc(100vh - 100px);
+  pointer-events: none;
+
+  @media (max-width: 820px) {
+    margin-top: -18rem;
+    padding: 0 2rem;
+  }
+  @media (max-width: 40em) {
+    margin-top: -10rem;
+    padding: 0 2rem;
+  }
+  @media (max-width: 375px) {
+    margin-top: -6rem;
+    padding: 0 2rem;
+  }
+
+  &__container {
+    position: relative;
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+
+    .pink-text2 {
+      position: absolute;
+      right: 10%;
+      top: 15%;
+      transform: translateY(115px);
+      transition: transform 0.5s;
+      clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+
+      .pink-span {
+        font-family: "Mazius", sans-serif;
+        color: #ff3636;
+        font-size: 1.2rem;
+        @media (max-width: 40em) {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 820px) {
+        right: -5px;
+      }
+    }
+    .pink-text {
+      margin-top: 1rem;
+      font-weight: 400;
+      transform: translateY(115px);
+      transition: transform 0.5s;
+
+      @media (max-width: 820px) {
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 40em) {
+        font-size: 0.8rem;
+        color: #fff;
+      }
+
+      .pink-span {
+        font-family: "Mazius", sans-serif;
+        color: #ff3636;
+        font-size: 1.2rem;
+        @media (max-width: 40em) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-family: "BebasNeue";
+    font-size: 15rem;
+    font-weight: 700;
+    line-height: 0.8em;
+    letter-spacing: -0.5rem;
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+
+    @media (max-width: 820px) {
+      font-size: 10rem;
+    }
+
+    @media (max-width: 40em) {
+      font-size: 5.5rem;
+      color: #fff;
+      letter-spacing: -0.2rem;
+    }
+
+    .char {
+      transform: translateY(210px);
+      transition: transform 0.5s;
+    }
+
+    ::selection {
+      background-color: #ff3636;
+      color: #fff;
+    }
+  }
+
+  &__pink {
+    font-family: "Mazius", sans-serif;
+    color: #ff3636;
+    letter-spacing: normal;
+    font-size: 14rem;
+    @media (max-width: 820px) {
+      font-size: 11rem;
+    }
+    @media (max-width: 40em) {
+      font-size: 5rem;
+    }
+  }
+}
